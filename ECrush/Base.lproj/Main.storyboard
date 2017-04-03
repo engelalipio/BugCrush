@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="AMSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cix-fV-Ljm"/>
+                        <viewControllerLayoutGuide type="bottom" id="foa-fX-AGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Target:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phb-XC-QN0">
+                                <rect key="frame" x="18" y="20" width="70" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="iuY-V7-XpM"/>
+                                    <constraint firstAttribute="height" constant="22" id="xwz-sD-Fyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Moves:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-BQ-msr">
+                                <rect key="frame" x="265" y="20" width="70" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="bPX-tC-eVW"/>
+                                    <constraint firstAttribute="width" constant="70" id="bmA-tl-R7n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-dA-TPu">
+                                <rect key="frame" x="518" y="20" width="70" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="M6J-Xs-CO4"/>
+                                    <constraint firstAttribute="height" constant="22" id="zhU-fB-tYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ko-Ng-em5">
+                                <rect key="frame" x="14" y="49" width="70" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="AsR-8K-5PZ"/>
+                                    <constraint firstAttribute="height" constant="17" id="CJR-TU-JlR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77N-Xj-kSP">
+                                <rect key="frame" x="265" y="49" width="70" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="sjy-uY-kJO"/>
+                                    <constraint firstAttribute="height" constant="17" id="vCu-wl-y7u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ButtonOther.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-t4-j9b">
+                                <rect key="frame" x="52" y="151" width="497" height="297"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="497" id="1y4-Y7-QQl"/>
+                                    <constraint firstAttribute="height" constant="297" id="zhf-hA-Rlf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tg-W6-fDf">
+                                <rect key="frame" x="277" y="65" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JXO-da-Nwl"/>
+                                    <constraint firstAttribute="width" constant="40" id="YvB-0B-C95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <state key="normal" image="Besouro.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="LVB-YS-i5n" eventType="touchUpInside" id="gPH-sk-vbj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyY-at-NdW">
+                                <rect key="frame" x="510" y="49" width="70" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Awt-WL-jAp"/>
+                                    <constraint firstAttribute="height" constant="17" id="vAd-g8-tA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewt-Rd-XgS">
+                                <rect key="frame" x="118" y="262" width="365" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="365" id="TVd-Ve-7tK"/>
+                                    <constraint firstAttribute="height" constant="76" id="Ziw-jv-Xvx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ilu-t4-j9b" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="DSp-Hh-Y2E"/>
+                            <constraint firstItem="0Tg-W6-fDf" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" constant="-2.5" id="FTA-Ur-N8Y"/>
+                            <constraint firstItem="fmP-BQ-msr" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="Pfg-6N-mNF"/>
+                            <constraint firstItem="77N-Xj-kSP" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="Rj8-Fq-41P"/>
+                            <constraint firstItem="IJM-dA-TPu" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="20" id="TBq-cd-ATr"/>
+                            <constraint firstItem="0Tg-W6-fDf" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="65" id="WOo-YP-pAU"/>
+                            <constraint firstItem="Ewt-Rd-XgS" firstAttribute="centerY" secondItem="bdc-N1-crn" secondAttribute="centerY" id="WaI-VD-Diy"/>
+                            <constraint firstItem="77N-Xj-kSP" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="49" id="YoJ-IV-sSO"/>
+                            <constraint firstItem="Ewt-Rd-XgS" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="Z5z-pB-rUR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IyY-at-NdW" secondAttribute="trailing" id="a1Y-Ka-FSU"/>
+                            <constraint firstItem="8ko-Ng-em5" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="49" id="dHa-YC-MiH"/>
+                            <constraint firstItem="Phb-XC-QN0" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leadingMargin" constant="-2" id="dI2-m0-ZAN"/>
+                            <constraint firstItem="fmP-BQ-msr" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="20" id="dJh-a1-WyI"/>
+                            <constraint firstItem="IyY-at-NdW" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="49" id="e7L-rg-p8P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IJM-dA-TPu" secondAttribute="trailing" constant="-8" id="peB-eR-7jz"/>
+                            <constraint firstItem="Phb-XC-QN0" firstAttribute="top" secondItem="Cix-fV-Ljm" secondAttribute="bottom" constant="20" id="vGo-CU-tyo"/>
+                            <constraint firstItem="8ko-Ng-em5" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leadingMargin" constant="-6" id="vW2-tZ-GwS"/>
+                            <constraint firstItem="Ilu-t4-j9b" firstAttribute="centerY" secondItem="bdc-N1-crn" secondAttribute="centerY" id="wfk-gk-0Ck"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnShuffle" destination="0Tg-W6-fDf" id="qmv-lj-vII"/>
+                        <outlet property="gameOverPanel" destination="Ilu-t4-j9b" id="wyR-Zx-atJ"/>
+                        <outlet property="gameStatusLabel" destination="Ewt-Rd-XgS" id="ycK-pK-oWN"/>
+                        <outlet property="movesLabel" destination="77N-Xj-kSP" id="0vs-EJ-rsK"/>
+                        <outlet property="scoreLabel" destination="IyY-at-NdW" id="G8P-DQ-KyU"/>
+                        <outlet property="targetLabel" destination="8ko-Ng-em5" id="ZcD-zX-Wdf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="162"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="3Bn-hB-QSE">
+            <objects>
+                <viewController storyboardIdentifier="sbMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LDd-R8-lUY" customClass="AMSMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U7B-36-WLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMa-pD-98A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R5a-Ue-EqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ECrush.png" translatesAutoresizingMaskIntoConstraints="NO" id="6F2-CS-9KY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sound On:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-d3-D9A">
+                                <rect key="frame" x="211" y="319" width="178" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4C5-1q-eWf"/>
+                                    <constraint firstAttribute="width" constant="178" id="VRS-OL-5J8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9K-aR-Z3s">
+                                <rect key="frame" x="256" y="481" width="88" height="30"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.33725490196078434" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6US-3t-fKm"/>
+                                    <constraint firstAttribute="width" constant="88" id="MrC-A5-tgu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeAction:" destination="LDd-R8-lUY" eventType="touchUpInside" id="L27-Gw-pd5"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-Rq-gdf">
+                                <rect key="frame" x="275" y="362" width="51" height="31"/>
+                                <connections>
+                                    <action selector="soundAction:" destination="LDd-R8-lUY" eventType="valueChanged" id="MsJ-G1-3Yh"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tag-2U-Hcb">
+                                <rect key="frame" x="208" y="20" width="183" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5Qg-WS-2iP"/>
+                                    <constraint firstAttribute="width" constant="183" id="5zj-6L-v3Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6F2-CS-9KY" firstAttribute="leading" secondItem="R5a-Ue-EqJ" secondAttribute="leadingMargin" constant="-20" id="DxZ-MU-E5u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6F2-CS-9KY" secondAttribute="trailing" constant="-20" id="IDF-L0-CGf"/>
+                            <constraint firstItem="Ihb-d3-D9A" firstAttribute="top" secondItem="U7B-36-WLf" secondAttribute="bottom" constant="319" id="MuS-sy-ZZO"/>
+                            <constraint firstItem="tag-2U-Hcb" firstAttribute="top" secondItem="U7B-36-WLf" secondAttribute="bottom" constant="20" id="bA5-tx-R8j"/>
+                            <constraint firstItem="9KN-Rq-gdf" firstAttribute="centerX" secondItem="R5a-Ue-EqJ" secondAttribute="centerX" id="ck2-z2-RGh"/>
+                            <constraint firstItem="tag-2U-Hcb" firstAttribute="centerX" secondItem="R5a-Ue-EqJ" secondAttribute="centerX" id="erf-fh-rsc"/>
+                            <constraint firstItem="9KN-Rq-gdf" firstAttribute="top" secondItem="Ihb-d3-D9A" secondAttribute="bottom" constant="8" symbolic="YES" id="lqc-vo-b1A"/>
+                            <constraint firstItem="cMa-pD-98A" firstAttribute="top" secondItem="6F2-CS-9KY" secondAttribute="bottom" id="luE-la-5XR"/>
+                            <constraint firstItem="Ihb-d3-D9A" firstAttribute="centerX" secondItem="R5a-Ue-EqJ" secondAttribute="centerX" id="rt4-id-h28"/>
+                            <constraint firstItem="y9K-aR-Z3s" firstAttribute="centerX" secondItem="R5a-Ue-EqJ" secondAttribute="centerX" id="umU-lM-zu6"/>
+                            <constraint firstItem="cMa-pD-98A" firstAttribute="top" secondItem="y9K-aR-Z3s" secondAttribute="bottom" constant="89" id="vjD-Vg-NMh"/>
+                            <constraint firstItem="6F2-CS-9KY" firstAttribute="top" secondItem="U7B-36-WLf" secondAttribute="bottom" id="za4-fh-hLC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnClose" destination="y9K-aR-Z3s" id="eWJ-3s-pXc"/>
+                        <outlet property="soundSwitch" destination="9KN-Rq-gdf" id="2Bv-yN-46l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS1-SY-DSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.875" y="162.67605633802816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Besouro.png" width="58" height="56"/>
+        <image name="ButtonOther.png" width="640" height="300"/>
+        <image name="ECrush.png" width="640" height="1136"/>
+    </resources>
+</document>
