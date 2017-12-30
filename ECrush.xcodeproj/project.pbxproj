@@ -574,7 +574,7 @@
 				ORGANIZATIONNAME = "Agile Mobile Solutions";
 				TargetAttributes = {
 					0F5DEE68199E9BF7009A9D7A = {
-						DevelopmentTeam = B7QMBU3EE6;
+						DevelopmentTeam = J749562KY5;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -838,6 +838,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J749562KY5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
@@ -847,7 +848,7 @@
 				INFOPLIST_FILE = "ECrush/ECrush-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrushAMS;
 				PRODUCT_NAME = BugCrush;
 				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
@@ -862,6 +863,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J749562KY5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
@@ -871,7 +873,7 @@
 				INFOPLIST_FILE = "ECrush/ECrush-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrushAMS;
 				PRODUCT_NAME = BugCrush;
 				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
