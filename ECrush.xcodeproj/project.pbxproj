@@ -855,7 +855,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Bugs Crush";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MARKETING_VERSION = 3.0.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
 				PRODUCT_NAME = BugCrush;
@@ -884,7 +884,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Bugs Crush";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MARKETING_VERSION = 3.0.1;
+				MARKETING_VERSION = 3.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
 				PRODUCT_NAME = BugCrush;
