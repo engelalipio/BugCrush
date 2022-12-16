@@ -67,6 +67,7 @@
 		0F8101D419A8E26100DDE947 /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F8101CF19A8E26100DDE947 /* Level_5.json */; };
 		0F8101D519A8E26100DDE947 /* Level_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F8101D019A8E26100DDE947 /* Level_8.json */; };
 		0F874A1E19A3CF84006F85C6 /* Scorpion.Atlas in Resources */ = {isa = PBXBuildFile; fileRef = 0F874A1D19A3CF83006F85C6 /* Scorpion.Atlas */; };
+		0FCEF133294CCE5500D31B59 /* Level_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEF132294CCE5500D31B59 /* Level_10.json */; };
 		0FFAAB5E199FDAE9007E6814 /* AMSSwap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFAAB5D199FDAE9007E6814 /* AMSSwap.m */; };
 		0FFAAB61199FEE9B007E6814 /* AMSChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFAAB60199FEE9B007E6814 /* AMSChain.m */; };
 		AA297CFF1D0A31290019B185 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = AA297CF81D0A31290019B185 /* __vungle.db */; };
@@ -193,6 +194,7 @@
 		0F8101CF19A8E26100DDE947 /* Level_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
 		0F8101D019A8E26100DDE947 /* Level_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_8.json; sourceTree = "<group>"; };
 		0F874A1D19A3CF83006F85C6 /* Scorpion.Atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Scorpion.Atlas; sourceTree = "<group>"; };
+		0FCEF132294CCE5500D31B59 /* Level_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_10.json; sourceTree = "<group>"; };
 		0FFAAB5C199FDAE8007E6814 /* AMSSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSSwap.h; sourceTree = "<group>"; };
 		0FFAAB5D199FDAE9007E6814 /* AMSSwap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSSwap.m; sourceTree = "<group>"; };
 		0FFAAB5F199FEE9B007E6814 /* AMSChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSChain.h; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 		0F5DEEAF199E9C4C009A9D7A /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+				0FCEF132294CCE5500D31B59 /* Level_10.json */,
 				0F5DEEB0199E9C4C009A9D7A /* Level_0.json */,
 				0F5DEEB1199E9C4C009A9D7A /* Level_1.json */,
 				0F5DEEB2199E9C4C009A9D7A /* Level_2.json */,
@@ -574,7 +577,8 @@
 				ORGANIZATIONNAME = "Agile Mobile Solutions";
 				TargetAttributes = {
 					0F5DEE68199E9BF7009A9D7A = {
-						DevelopmentTeam = J749562KY5;
+						DevelopmentTeam = B7QMBU3EE6;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -591,6 +595,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -626,6 +631,7 @@
 				0F29389E1ACDF8EA0033A5D3 /* LaunchScreen.xib in Resources */,
 				0F1B6E1F19A4271C00C1E913 /* Forest.png in Resources */,
 				0F5DEEC2199E9C4C009A9D7A /* Level_0.json in Resources */,
+				0FCEF133294CCE5500D31B59 /* Level_10.json in Resources */,
 				AA969FF11BE9487C004C4093 /* Icon-Small@2x.png in Resources */,
 				0F2938A41ACDFA090033A5D3 /* Background.jpg in Resources */,
 				0F8101D419A8E26100DDE947 /* Level_5.json in Resources */,
@@ -836,9 +842,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J749562KY5;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7QMBU3EE6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
@@ -846,11 +852,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ECrush/ECrush-Prefix.pch";
 				INFOPLIST_FILE = "ECrush/ECrush-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bugs Crush";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MARKETING_VERSION = 3.0.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrushAMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
 				PRODUCT_NAME = BugCrush;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -861,9 +871,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J749562KY5;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7QMBU3EE6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
@@ -871,11 +881,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ECrush/ECrush-Prefix.pch";
 				INFOPLIST_FILE = "ECrush/ECrush-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bugs Crush";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MARKETING_VERSION = 3.0.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrushAMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ams.ECrush;
 				PRODUCT_NAME = BugCrush;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};

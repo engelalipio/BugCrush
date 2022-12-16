@@ -23,7 +23,7 @@
 
     if (self.levels == nil){
         _levels = [[NSArray alloc] initWithObjects:@"Level_0",@"Level_1",@"Level_2",@"Level_3",@"Level_4",
-                   @"Level_5",@"Level_6",@"Level_7",@"Level_8",@"Level_9",nil];
+                   @"Level_5",@"Level_6",@"Level_7",@"Level_8",@"Level_9",@"Level_10",nil];
     }
     
     
@@ -35,7 +35,7 @@
 
 -(NSString *) randomLevel{
     NSString *levelName = @"",
-                    *message   = @"";
+             *message   = @"";
     
     int rndLevel = 0;
     bool notSet = false;
@@ -47,7 +47,7 @@
             
                 rndLevel = arc4random_uniform(self.levels.count);
                 levelName = [self.levels objectAtIndex:rndLevel];
-            
+                //levelName = @"Level_10";
                 if (! self.currentLevel){
                     _currentLevel = levelName;
                     message = [NSString  stringWithFormat:@"Set Initial Random Level to -> %@",levelName];

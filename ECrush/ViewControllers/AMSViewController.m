@@ -262,7 +262,7 @@
         case 5:
         case 4:
         case 3:
-            self.movesLabel.textColor = [UIColor orangeColor];
+            self.movesLabel.textColor = [UIColor yellowColor];
             break;
             
         case 2:
@@ -271,7 +271,7 @@
            self.movesLabel.textColor = [UIColor redColor];
             break;
         default:
-            self.movesLabel.textColor = [UIColor yellowColor];
+            self.movesLabel.textColor = [UIColor orangeColor];
             break;
     }
     

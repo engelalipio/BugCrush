@@ -570,9 +570,10 @@ static inline CGPoint CGPointDivideScalar(const CGPoint a, const CGFloat b)
         if (idleAction != nil){
             
             repeatAction = [insect.insectSprite actionForKey:idleKey];
-            
+             
             if (repeatAction == nil){
-                repeatAction = [SKAction repeatActionForever:idleAction ];
+               // repeatAction = [SKAction repeatActionForever:idleAction ];
+                repeatAction = [SKAction repeatAction:idleAction count:kLastTouchedThreshold];
                 message = [NSString stringWithFormat: @"Repeating Idle action for %@", insect.spriteName ];
                 [insect.insectSprite runAction:repeatAction withKey:idleKey];
                 if(! idleInsectOne){
